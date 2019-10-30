@@ -24,9 +24,8 @@ class School
   
   def sort
     sorted = {}
-    ar = @roster.keys.sort
-    ar.each do |i|
-      sorted[i] = @roster[i].sort
+    @roster.each do |k, v|
+      sorted[k] = v.sort
     end
     sorted
   end
